@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Clinic | Making Health Care Better Together</title>
+    <meta name="description"
+        content="Dental Clinic offers modern, professional healthcare services, clinics, labs, and online consultations. Book your appointment today.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav id="navbar" class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="#">Pollo <span>Hospital</span></a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <ul class="menu-items">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="icon-btn search-trigger" aria-label="Search"><i class="fas fa-search"></i></button>
+                    <a href="#book-appointment" class="btn btn-primary btn-signup">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <!-- Hero Left: Content -->
+                <div class="hero-content">
+                    <h1 class="hero-title fade-in-up">Making Health Care <span>Better Together</span></h1>
+                    <p class="hero-description fade-in-up">Pollo Hospital provides world-class healthcare with
+                        state-of-the-art facilities and experienced medical professionals dedicated to your wellness.
+                    </p>
+
+                    <div class="search-area fade-in-up">
+                        <div class="search-box">
+                            <select class="custom-select" aria-label="Select Category">
+                                <option value="" disabled selected>Select Your Category</option>
+                                <option value="doctor">Doctors</option>
+                                <option value="clinic">Clinics</option>
+                                <option value="lab">Labs</option>
+                            </select>
+                            <button class="btn btn-primary search-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="appointment-card fade-in-up">
+                        <div class="info-group">
+                            <div class="info-label">Date:</div>
+                            <div class="info-value">Thu, Mar 01, 2026</div>
+                        </div>
+                        <div class="info-divider"></div>
+                        <div class="info-group">
+                            <div class="info-label">Location:</div>
+                            <div class="info-value">Bristol Branch</div>
+                        </div>
+                        <div class="info-divider"></div>
+                        <div class="info-group">
+                            <div class="info-label">Service:</div>
+                            <div class="info-value">Otolaryngology</div>
+                        </div>
+                        <div class="action-group">
+                            <a href="#book-appointment" class="btn btn-primary">Get Appointment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right: Image -->
+                <div class="hero-image">
+                    <div class="image-wrapper floating">
+                        <img src="images/hero-doctor.png" alt="Professional Doctor" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPLORE BY SECTION -->
+        <section id="services" class="section bg-light">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2 class="section-title">Explore By</h2>
+                    <p class="section-subtitle">Find exactly what you need from our comprehensive healthcare services.
+                    </p>
+                </div>
+
+                <div class="explore-grid">
+                    <!-- Cards -->
+                    <div class="explore-card fade-in-up">
+                        <div class="icon-wrapper"><i class="fas fa-user-md"></i></div>
+                        <h3>Doctors</h3>
+                        <p>Find experienced specialists.</p>
+                    </div>
+                    <div class="explore-card fade-in-up">
+                        <div class="icon-wrapper"><i class="fas fa-hospital"></i></div>
+                        <h3>Clinics</h3>
+                        <p>Locate branches near you.</p>
+                    </div>
+                    <div class="explore-card fade-in-up">
+                        <div class="icon-wrapper"><i class="fas fa-flask"></i></div>
+                        <h3>Labs</h3>
+                        <p>Advanced pathology services.</p>
+                    </div>
+                    <div class="explore-card fade-in-up">
+                        <div class="icon-wrapper"><i class="fas fa-ambulance"></i></div>
+                        <h3>Emergency</h3>
+                        <p>24/7 emergency care.</p>
+                    </div>
+                    <div class="explore-card fade-in-up">
+                        <div class="icon-wrapper"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Insurance</h3>
+                        <p>Accepted health policies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ONLINE CONSULTATION SECTION -->
+        <section class="section">
+            <div class="container consultation-container">
+                <div class="consultation-image fade-in-up">
+                    <img src="images/consultation-doctor.png" alt="Doctor Online Consultation"
+                        class="rounded-img shadow-lg floating" style="animation-duration: 8s;" />
+                </div>
+                <div class="consultation-content fade-in-up">
+                    <h2 class="section-title">Start an online chat consultation with a Doctor</h2>
+                    <p class="section-description">Get expert medical advice from the comfort of your home. Our doctors
+                        are available round the clock to respond to your queries and provide prescriptions securely.</p>
+
+                    <div class="consultation-options">
+                        <button class="btn btn-secondary consultation-btn"><i class="fas fa-comments"></i> Chat</button>
+                        <button class="btn btn-secondary consultation-btn"><i class="fas fa-envelope"></i>
+                            Query</button>
+                        <button class="btn btn-secondary consultation-btn"><i class="fas fa-phone-alt"></i>
+                            Phone</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONSULTING SPECIALITIES SECTION -->
+        <section id="specialities" class="section">
+            <div class="container">
+                <div class="section-header text-center fade-in-up">
+                    <h2 class="section-title">Our Consulting Specialities</h2>
+                    <p class="section-subtitle">Comprehensive care across all major medical disciplines.</p>
+                </div>
+
+                <div class="specialities-grid">
+                    <div class="speciality-card fade-in-up">
+                        <div class="icon-circle"><i class="fas fa-tooth"></i></div>
+                        <h4>Dentistry</h4>
+                    </div>
+                    <div class="speciality-card fade-in-up">
+                        <div class="icon-circle"><i class="fas fa-brain"></i></div>
+                        <h4>Neurology</h4>
+                    </div>
+                    <div class="speciality-card fade-in-up">
+                        <div class="icon-circle"><i class="fas fa-allergies"></i></div>
+                        <h4>Dermatology</h4>
+                    </div>
+                    <div class="speciality-card fade-in-up">
+                        <div class="icon-circle"><i class="fas fa-stethoscope"></i></div>
+                        <h4>Internal Medicine</h4>
+                    </div>
+                    <div class="speciality-card fade-in-up">
+                        <div class="icon-circle"><i class="fas fa-ear-deaf"></i></div>
+                        <h4>Otolaryngology</h4>
+                    </div>
+                    <div class="speciality-card fade-in-up">
+                        <div class="icon-circle"><i class="fas fa-notes-medical"></i></div>
+                        <h4>General Medicine</h4>
+                    </div>
+                    <div class="speciality-card fade-in-up">
+                        <div class="icon-circle"><i class="fas fa-ribbon"></i></div>
+                        <h4>HIV/AIDS</h4>
+                    </div>
+                    <div class="speciality-card fade-in-up">
+                        <div class="icon-circle"><i class="fas fa-kidneys"></i></div>
+                        <h4>Urology</h4>
+                    </div>
+                    <div class="speciality-card fade-in-up">
+                        <div class="icon-circle"><i class="fas fa-child"></i></div>
+                        <h4>Pediatrics</h4>
+                    </div>
+                    <div class="speciality-card fade-in-up">
+                        <div class="icon-circle"><i class="fas fa-virus"></i></div>
+                        <h4>Infection Disease</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROMOTION BANNER -->
+        <section class="promotion-banner section fade-in-up">
+            <div class="promotion-overlay"></div>
+            <div class="container relative-z">
+                <div class="promotion-content text-center">
+                    <span class="promo-tag">This Sunday</span>
+                    <h2 class="promo-title">Doctor For Today's Lifestyle</h2>
+                    <p class="promo-desc">Helping your smile and ensuring overall wellness with modern medical
+                        practices.</p>
+                    <a href="#book-appointment" class="btn btn-primary promo-btn">Join Now</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- BLOG SECTION -->
+    <section id="blog" class="section bg-light">
+        <div class="container">
+            <div class="section-header text-center fade-in-up">
+                <h2 class="section-title">Our Recent Information & Articles</h2>
+                <p class="section-subtitle">Stay updated with the latest medical news and health tips.</p>
+            </div>
+
+            <div class="blog-grid">
+                <div class="blog-card fade-in-up">
+                    <div class="blog-img-wrapper"><img src="images/blog-1.png" alt="Medical Research"></div>
+                    <div class="blog-content">
+                        <span class="blog-category">Research</span>
+                        <h3 class="blog-title">Breakthroughs in Modern Lab Tech</h3>
+                        <p class="blog-desc">Discover how new laboratory technologies are shaping the future of
+                            medicine.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card fade-in-up" style="transition-delay: 0.1s">
+                    <div class="blog-img-wrapper"><img src="images/blog-2.png" alt="Consultation"></div>
+                    <div class="blog-content">
+                        <span class="blog-category">Consultation</span>
+                        <h3 class="blog-title">The Benefits of Regular Checkups</h3>
+                        <p class="blog-desc">Why scheduling an annual physical is the smartest thing you can do for your
+                            health.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-card fade-in-up" style="transition-delay: 0.2s">
+                    <div class="blog-img-wrapper"><img src="images/blog-3.png" alt="Healthy Lifestyle"></div>
+                    <div class="blog-content">
+                        <span class="blog-category">Wellness</span>
+                        <h3 class="blog-title">Embracing a Healthy Lifestyle</h3>
+                        <p class="blog-desc">Simple daily habits that can significantly boost your immune system.</p>
+                        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="section">
+        <div class="container text-center">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">What our user say?</h2>
+                <p class="section-subtitle">Read stories from our patients about their experiences.</p>
+            </div>
+
+            <div class="testimonial-carousel fade-in-up">
+                <button class="icon-btn slider-nav prev" id="testi-prev"><i class="fas fa-chevron-left"></i></button>
+
+                <div class="testimonial-track-container">
+                    <div class="testimonial-track" id="testi-track">
+                        <!-- Testimonial Item 1 -->
+                        <div class="testimonial-item active">
+                            <div class="testi-content">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <p class="review-text">"The doctors and staff at Pollo Hospital provided exceptional
+                                    care during my recent visit. The online appointment system was incredibly easy to
+                                    use, and I was seen exactly on time."</p>
+                                <div class="user-info">
+                                    <img src="images/patient-1.png" alt="Sarah Jenkins" class="user-photo">
+                                    <div class="name-role">
+                                        <h4>Sarah Jenkins</h4>
+                                        <span>Patient</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial Item 2 -->
+                        <div class="testimonial-item">
+                            <div class="testi-content">
+                                <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                                <p class="review-text">"I utilized the online consultation feature when I couldn't leave
+                                    home. The doctor was attentive, professional, and helped me immediately. Highly
+                                    recommended!"</p>
+                                <div class="user-info">
+                                    <img src="images/patient-2.png" alt="Michael Chen" class="user-photo">
+                                    <div class="name-role">
+                                        <h4>Michael Chen</h4>
+                                        <span>Patient</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="icon-btn slider-nav next" id="testi-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-image fade-in-up">
+                    <div class="circle-image-wrapper">
+                        <img src="images/hero-doctor.png" alt="Medical Team" />
+                    </div>
+                </div>
+                <div class="contact-form-wrapper fade-in-up">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-description">Fill out the form below to book your appointment or ask us any
+                        questions.</p>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="Your Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-input" placeholder="Your Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" class="form-input" placeholder="How can we help you?"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo footer-logo">
+                        <a href="#">Pollo <span>Hospital</span></a>
+                    </div>
+                    <p class="footer-desc">Pollo Hospital is a leading healthcare provider dedicated to providing
+                        world-class medical services since 1999.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Health Ave, Bristol</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
+                        <li><i class="fas fa-envelope"></i> info@pollohospital.com</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pollo Hospital. All Rights Reserved. design by rakeshwebdesign</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- APPOINTMENT BOOKING MODAL -->
+    <div class="modal" id="booking-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-booking">&times;</span>
+            <h2 class="section-title" style="margin-bottom: 24px; font-size: 2rem;">Book Appointment</h2>
+            <form id="booking-form-modal" class="contact-form" style="box-shadow: none; padding: 0;">
+                <div class="form-group">
+                    <input type="text" id="b-name" class="form-input" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="b-phone" class="form-input" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="b-email" class="form-input" placeholder="Email Address" required>
+                </div>
+                <div class="form-group" style="display: flex; gap: 16px;">
+                    <select id="b-service" class="form-input" required style="flex: 1;">
+                        <option value="" disabled selected>Select Service</option>
+                        <option value="Cardiology">Cardiology</option>
+                        <option value="Dentistry">Dentistry</option>
+                        <option value="Neurology">Neurology</option>
+                    </select>
+                    <select id="b-doctor" class="form-input" required style="flex: 1;">
+                        <option value="" disabled selected>Select Doctor</option>
+                        <option value="Dr. Smith">Dr. Smith</option>
+                        <option value="Dr. Jenkins">Dr. Jenkins</option>
+                    </select>
+                </div>
+                <div class="form-group" style="display: flex; gap: 16px;">
+                    <input type="date" id="b-date" class="form-input" required style="flex: 1;">
+                    <input type="time" id="b-time" class="form-input" required style="flex: 1;">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Book Appointment</button>
+            </form>
+            <div id="booking-success"
+                style="display: none; text-align: center; color: var(--primary-color); margin-top: 20px; font-weight: 600;">
+                <i class="fas fa-check-circle"></i> Your appointment request has been submitted. Our team will contact
+                you shortly.
+            </div>
+        </div>
+    </div>
+
+    <!-- WHATSAPP FLOATING BUTTON -->
+    <a href="https://wa.me/1234567890?text=Hello,%20I%20want%20to%20book%20an%20appointment." target="_blank"
+        class="whatsapp-btn floating" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- AI CHATBOT -->
+    <div class="chatbot-container" id="chatbot-container">
+        <!-- Chat Toggle Button -->
+        <button class="chat-toggle-btn" id="chat-toggle-btn" aria-label="Open AI Assistant">
+            <i class="fas fa-robot"></i>
+        </button>
+
+        <!-- Chat Window -->
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <div class="chat-title">
+                    <i class="fas fa-robot"></i> MediAssist AI
+                </div>
+                <button class="close-chat" id="close-chat">&times;</button>
+            </div>
+            <div class="chat-body" id="chat-body">
+                <!-- Messages will be injected here via JS -->
+            </div>
+            <div class="chat-footer">
+                <div class="typing-indicator" id="typing-indicator">
+                    <span></span><span></span><span></span>
+                </div>
+                <div class="chat-input-area" id="chat-input-area">
+                    <input type="text" id="chat-input" class="chat-input" placeholder="Type your answer...">
+                    <button id="chat-send" class="chat-send-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
